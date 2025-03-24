@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <h3>LOGIN:</h3>
+            <form id="login-form">
+                <label for="username">
+                    <strong>Username:</strong>
+                    <br>
+                    <input type="text" id="username" name="username">
+                </label>
+                <label for="password">
+                    <strong>Password:</strong>
+                    <br>
+                    <input type="password" id="password" name="password">
+                </label>
+                <button id="login-btn">Login</button>
+            </form>
+        </section>
+        <section id="wallet" style="display: none;">
+            <div class="balance-box">
+                <h3>Balance:</h3>
+                <p id="balance-amount">$0.00</p>
+                <p id="balance-warning" style="color: red; display: none;">Insufficient balance!</p>
+            </div>
+            <div id="transaction-box">
+                <h3>Transactions:</h3>
+                <ul id="transaction-list">
+                </ul>
+            </div>
+            <div class="send-box">
+                <h3>Send:</h3>
+                <form id="send-form">
+                    <label for="recipient">
+                        <strong>Recipient:</strong>
+                        <br>
+                        <input type="text" id="recipient" name="recipient">
+                    </label>
+                    <label for="amount">
+                        <strong>Amount:</strong>
+                        <br>
+                        <input type="number" id="amount" name="amount">
+                    </label>
+                    <button id="send-btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
